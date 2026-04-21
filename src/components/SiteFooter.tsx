@@ -31,7 +31,7 @@ export function SiteFooter() {
         </div>
         <div className="foot-bar">
           <div>© 2026 Polymer Synthetic, Inc.</div>
-          <div>Deterministic · reproducible · documented</div>
+          <div>Deterministic · Reproducible · Documented</div>
           <div>Built in Brooklyn</div>
         </div>
       </div>
