@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Polymer — Synthetic training data for object detection</title>
+    <meta
+      name="description"
+      content="Photorealistic synthetic training data from a single 3D asset. For teams with fewer than 250 labeled images per class."
+    />
+    <meta name="theme-color" content="#F5F4F0" />
+    <script>
+      // Apply stored theme (or default to light) BEFORE the stylesheet loads,
+      // so there's no dark → light flash on first render.
+      (function () {
+        try {
+          var stored = localStorage.getItem("polymer-theme");
+          var theme = stored === "dark" || stored === "light" ? stored : "light";
+          if (theme === "light") {
+            document.documentElement.setAttribute("data-theme", "light");
+          }
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <meta property="og:title" content="Polymer — Synthetic training data for object detection" />
+    <meta
+      property="og:description"
+      content="+32.9 mAP@50 points at 25 real labels. 0.90 recall on real-world data. Synthetic training data, benchmarked against public evals — not another PDF with made-up percentages."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://polymersynth.com" />
+    <link rel="canonical" href="https://polymersynth.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
