@@ -8,8 +8,8 @@ export function Pricing() {
             Priced like <em>a dataset,</em> not a demo.
           </h2>
           <p className="deck">
-            Every tier includes the validation report. No PDFs with made-up percentages — real
-            mAP@50 on a real eval set, delivered with your images.
+            Every tier includes a comprehensive datasheet covering dataset composition, scene
+            coverage, annotations, and deliverables.
           </p>
         </div>
 
@@ -18,12 +18,12 @@ export function Pricing() {
             name="Pilot"
             price="$2,400"
             unit="/ one class"
-            sub="First time with us? Start here. 48h turnaround."
+            sub="Start with a focused, production-quality dataset for one class."
             items={[
-              "2,000 renders, one class",
-              "Domain randomization · HDRI / pose / material",
+              "2,000 labeled renders, one class",
+              "Coverage across lighting · environment · occlusion · viewpoint",
               "COCO + YOLO annotations",
-              "Validation report on your eval set",
+              "Comprehensive Datasheet",
               "48 hour delivery",
             ]}
             ctaHref="#request"
@@ -36,12 +36,12 @@ export function Pricing() {
             featured
             price="$9,800"
             unit="/ one class"
-            sub="For teams past pilot, training on production eval sets."
+            sub="For teams moving beyond pilot and building broader training coverage."
             items={[
-              "10,000 renders, one class",
-              "Multi-seed sweep (3 seeds, variance reported)",
-              "Extended randomization policy",
-              "Validation on 2 eval sets",
+              "Everything in Pilot",
+              "10,000 labeled renders, one class",
+              "Expanded coverage across lighting · environment · occlusion · viewpoint",
+              "Object pose included",
               "7 day delivery",
             ]}
             ctaHref="#request"
@@ -52,10 +52,11 @@ export function Pricing() {
             name="Enterprise"
             price="Let's talk"
             priceTalk
-            sub="Multi-class pools, custom asset sourcing, on-prem delivery."
+            sub="Multi-class dataset programs with custom asset creation and deployment needs."
             items={[
-              "Multi-class dataset pool",
-              "Asset sourcing (scan, photogrammetry, modeling)",
+              "Multi-class dataset program",
+              "Custom asset creation from photos, video, scan, or CAD",
+              "Custom coverage design and annotation schema",
               "On-prem / VPC rendering available",
               "SLA + dedicated ML engineer",
               "Classified / ITAR engagements via NDA",

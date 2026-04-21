@@ -5,14 +5,14 @@ export function HowItWorks() {
         <div className="section-head">
           <span className="eyebrow">How it works · 48h pipeline</span>
           <h2>
-            One asset in. A <em>trained dataset</em> out.
+            From source material to a <em>labeled dataset</em>.
           </h2>
         </div>
 
         <div className="steps">
           <Step
             num="01"
-            label="UPLOAD"
+            label="SHARE"
             icon={
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                 <path
@@ -25,16 +25,16 @@ export function HowItWorks() {
                 <rect x="4" y="14" width="16" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5" />
               </svg>
             }
-            title="Drop in your 3D asset."
-            body="One file. We handle rigging, materials, and scale normalization."
+            title="Share photos, video, or a 3D model."
+            body="Start with reference photos, a short video, or an existing 3D model. If needed, we build the asset first using standard 3D modeling or Gaussian splatting."
             detailLeft={
               <>
-                accepted: <span style={{ color: "var(--ink-2)" }}>.glb · .gltf · .fbx · .obj · .blend</span>
+                inputs: <span style={{ color: "var(--ink-2)" }}>photos · video · 3D model</span>
               </>
             }
             detailRight={
               <>
-                rigged armature: <span style={{ color: "var(--good)" }}>supported</span>
+                asset creation: <span style={{ color: "var(--good)" }}>included if needed</span>
               </>
             }
           />
@@ -52,22 +52,22 @@ export function HowItWorks() {
                 />
               </svg>
             }
-            title="Generate thousands of images."
-            body="Full domain randomization across camera, lighting, pose, and materials. Physically-based rendering with AI denoise — photoreal by design."
+            title="Render realistic training images."
+            body="We generate images with realistic lighting, environments, viewpoints, and occlusion so the dataset reflects the conditions your model will actually see."
             detailLeft={
               <>
-                randomized: <span style={{ color: "var(--ink-2)" }}>pose · lighting · material · focal</span>
+                variation: <span style={{ color: "var(--ink-2)" }}>lighting · environment · occlusion · viewpoint</span>
               </>
             }
             detailRight={
               <>
-                reproducible seeds: <span style={{ color: "var(--good)" }}>yes</span>
+                scenes: <span style={{ color: "var(--good)" }}>matched to your use case</span>
               </>
             }
           />
           <Step
             num="03"
-            label="TRAIN"
+            label="DELIVER"
             icon={
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                 <path
@@ -86,20 +86,24 @@ export function HowItWorks() {
                 />
               </svg>
             }
-            title="Train your model. Track the lift."
-            body="We deliver images + COCO/YOLO annotations + a validation report benchmarking synth-only, real-only, and real+synth on your eval set."
+            title="Receive a high-quality dataset."
+            body="We deliver a high-quality synthetic dataset with rendered images and labels in COCO or YOLO format, with object pose included as part of the annotations."
             detailLeft={
               <>
-                formats: <span style={{ color: "var(--ink-2)" }}>COCO · YOLO · Pascal VOC</span>
+                deliverables: <span style={{ color: "var(--ink-2)" }}>images · COCO/YOLO labels</span>
               </>
             }
             detailRight={
               <>
-                included: <span style={{ color: "var(--good)" }}>validation report</span>
+                included: <span style={{ color: "var(--good)" }}>object pose</span>
               </>
             }
           />
         </div>
+
+        <p style={{ marginTop: "20px", textAlign: "center", color: "var(--ink-2)" }}>
+          Need a model too? We can train it for you as an add-on service.
+        </p>
 
       </div>
     </section>

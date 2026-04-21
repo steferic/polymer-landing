@@ -46,7 +46,7 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="hero-meta">Free first benchmark · 48h turnaround · No sales call required</div>
+        <div className="hero-meta">Free first benchmark · 48h turnaround</div>
       </div>
 
       <div className="wrap" style={{ marginTop: "64px", position: "relative" }}>

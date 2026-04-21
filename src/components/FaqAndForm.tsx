@@ -19,45 +19,70 @@ export function FaqAndForm() {
               q="How do you know it works?"
               a={
                 <>
-                  We benchmarked against public real-world eval data — the Voxel51 hard-hat-detection
-                  set. Full results, training configs, and code available <a href="#">here</a>. Not
-                  a whitepaper. A repo.
+                  We have already validated the pipeline against held-out real-world evaluation data.
+                  The results show that the synthetic data improves downstream detection performance
+                  on novel classes, not just synthetic-only benchmarks. <a href="#benchmark">See the proof.</a>
                 </>
               }
             />
             <Q
-              q="What asset formats do you accept?"
-              a={<>.glb, .gltf, .fbx, .obj, .blend. If your asset has a rigged armature, we handle it. If it's poorly UV-unwrapped, we'll fix materials before rendering.</>}
-            />
-            <Q
-              q="How do you measure sim-to-real gap?"
+              q="Do we need to have a 3D model already?"
               a={
                 <>
-                  mAP@50 on a held-out real eval set you choose — ideally public and canonical. We
-                  also compute FID between synth and real on request, but we consider downstream
-                  task performance the only metric that matters.
+                  No. If you already have a 3D model, we use it. If not, we can build the asset from
+                  photos or video using standard 3D modeling or Gaussian splatting.
                 </>
               }
             />
             <Q
-              q="Can I use my own eval data?"
-              a={<>Yes. Drop in a YOLO or COCO eval set and we report lift against that specifically. Your eval set stays yours.</>}
+              q="What do you deliver?"
+              a={
+                <>
+                  A high-quality synthetic dataset with rendered images, labels in COCO or YOLO
+                  format, object pose annotations, and a comprehensive datasheet describing dataset
+                  composition and scene coverage.
+                </>
+              }
+            />
+            <Q
+              q="How realistic are the renders?"
+              a={
+                <>
+                  We build scenes around the conditions your model is expected to face, including
+                  lighting, environment, viewpoint, and occlusion. The goal is coverage that maps to
+                  your use case, not generic renders.
+                </>
+              }
             />
             <Q
               q="How long does a pilot take?"
-              a={<>48 hours from asset upload to images + validation report. Scale jobs take about a week because of the multi-seed sweep.</>}
+              a={
+                <>
+                  Pilot datasets are delivered in 48 hours. Scale jobs typically take about 7 days,
+                  depending on asset creation and coverage requirements.
+                </>
+              }
+            />
+            <Q
+              q="Can you train the model too?"
+              a={
+                <>
+                  Yes. Model training is available as an add-on service if you want us to take the
+                  dataset through training as well.
+                </>
+              }
             />
           </div>
         </div>
 
         <div id="request" style={{ position: "sticky", top: 80 }}>
-          <span className="eyebrow">Request a class benchmark</span>
+          <span className="eyebrow">Request a sample dataset</span>
           <h2 style={{ marginBottom: 16 }}>
             Free first run. <em>48 hours.</em>
           </h2>
           <p style={{ color: "var(--ink-2)", marginBottom: 28 }}>
-            Tell us your class and what you have. We'll benchmark one dataset at 2k renders on your
-            eval set, free. No sales call.
+            Tell us your class and what you have. We&apos;ll generate a small sample dataset of
+            about 10 labeled renders so you can see the output quality.
           </p>
 
           <RequestForm />
@@ -122,7 +147,7 @@ function RequestForm() {
           ✓ Received · we'll reply within 12h
         </span>
         <button type="submit" className="btn btn-primary">
-          {submitted ? "Queued — we'll email you" : "Queue the benchmark"}
+          {submitted ? "Queued — we'll email you" : "Request the sample dataset"}
           {!submitted && (
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
               <path
