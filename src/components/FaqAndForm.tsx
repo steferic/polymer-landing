@@ -29,8 +29,9 @@ export function FaqAndForm() {
               q="Do we need to have a 3D model already?"
               a={
                 <>
-                  No. If you already have a 3D model, we use it. If not, we can build the asset from
-                  photos or video using standard 3D modeling or Gaussian splatting.
+                  Ideally, yes. We get the best results when you provide the 3D model directly. If we
+                  have to create one from photos or video, it will be an approximation, and you should
+                  expect some loss in downstream performance.
                 </>
               }
             />
@@ -59,7 +60,7 @@ export function FaqAndForm() {
               a={
                 <>
                   Pilot datasets are delivered in 48 hours. Scale jobs typically take about 7 days,
-                  depending on asset creation and coverage requirements.
+                  depending on asset readiness and coverage requirements.
                 </>
               }
             />
@@ -78,11 +79,11 @@ export function FaqAndForm() {
         <div id="request" style={{ position: "sticky", top: 80 }}>
           <span className="eyebrow">Request a sample dataset</span>
           <h2 style={{ marginBottom: 16 }}>
-            Free first run. <em>48 hours.</em>
+            See a sample in <em>48 hours.</em>
           </h2>
           <p style={{ color: "var(--ink-2)", marginBottom: 28 }}>
-            Tell us your class and what you have. We&apos;ll generate a small sample dataset of
-            about 10 labeled renders so you can see the output quality.
+            Tell us your class and share your 3D asset. We&apos;ll generate a small sample dataset
+            of about 10 labeled renders so you can see the output quality.
           </p>
 
           <RequestForm />
@@ -128,8 +129,8 @@ function RequestForm() {
         </select>
       </div>
       <div>
-        <label>Target mAP@50</label>
-        <input type="text" placeholder="0.70" defaultValue="0.70" />
+        <label>Deployment environment</label>
+        <input type="text" placeholder="e.g. warehouse, roadway, retail shelf" />
       </div>
       <div className="full">
         <label>Work email</label>
@@ -139,7 +140,7 @@ function RequestForm() {
         <label>Notes (optional)</label>
         <textarea
           rows={3}
-          placeholder="Link your 3D asset, or describe it. If you have an eval set link, even better."
+          placeholder="Link your 3D asset and describe the scene conditions and edge cases you care about."
         />
       </div>
       <div className="form-actions full">

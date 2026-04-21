@@ -13,8 +13,7 @@ export function Hero() {
           Not anymore.
         </h1>
         <p className="sub">
-          Photorealistic synthetic training data from a single 3D asset. For teams with fewer than
-          250 labeled images per class.
+          Photorealistic synthetic training data built from your 3D asset.
         </p>
 
         <div className="hero-ctas">
@@ -35,18 +34,18 @@ export function Hero() {
                 strokeLinejoin="round"
               />
             </svg>
-            See the benchmark <span className="kbd">B</span>
+            See the proof <span className="kbd">B</span>
           </a>
           <a className="btn btn-ghost" href="#request">
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <rect x="2.5" y="3.5" width="11" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.4" />
               <path d="M3 5 L8 8.5 L13 5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
             </svg>
-            Request a class benchmark <span className="kbd dark">R</span>
+            Request a sample dataset <span className="kbd dark">R</span>
           </a>
         </div>
 
-        <div className="hero-meta">Free first benchmark · 48h turnaround</div>
+        <div className="hero-meta">Free sample dataset · 48h turnaround</div>
       </div>
 
       <div className="wrap" style={{ marginTop: "64px", position: "relative" }}>
@@ -54,7 +53,7 @@ export function Hero() {
           <Stat label="zero-label mAP@50" val="0.154" unit="on novel class" />
           <Stat label="Lift @ 25 real labels" val="+32.9" unit="points" />
           <Stat label="Real-eval recall" val="0.90" unit="5,710 real instances" />
-          <Stat label="Pilot turnaround" val="48" unit="hours, asset → report" />
+          <Stat label="Pilot turnaround" val="48" unit="hours, asset → dataset" />
         </div>
       </div>
     </section>

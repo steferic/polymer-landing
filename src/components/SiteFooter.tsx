@@ -16,7 +16,7 @@ export function SiteFooter() {
           <div>
             <h4>Product</h4>
             <ul>
-              <li><a href="#benchmark">Benchmark</a></li>
+              <li><a href="#benchmark">Proof</a></li>
               <li><a href="#how">How it works</a></li>
               <li><a href="#pricing">Pricing</a></li>
               <li><a href="#faq">FAQ</a></li>

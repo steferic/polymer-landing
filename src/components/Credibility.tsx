@@ -5,9 +5,9 @@ export function Credibility() {
     <section className="credibility">
       <div className="wrap row">
         <div className="cred-caption">
-          Validated against public benchmarks.
+          Validated on held-out real-world data.
           <br />
-          <span style={{ color: "var(--ink-2)" }}>No cherry-picked evals.</span>
+          <span style={{ color: "var(--ink-2)" }}>Evidence, not cherry-picked renders.</span>
         </div>
         <div className="logos">
           <Logo name="COCO">

@@ -5,43 +5,42 @@ export function WhyItWorks() {
         <div className="section-head">
           <span className="eyebrow">Why this works when others don't</span>
           <h2>
-            Most synthetic data demos are <em>pretrained-backbone theater.</em>
+            Synthetic data only works if the <em>dataset is usable.</em>
           </h2>
           <p className="deck">
-            Every vendor shows cats or cars. COCO already taught YOLO those. Here's what we do
-            differently so the lift you see on the chart is the lift you'll actually get on your
-            class.
+            Good renders are not enough. The dataset has to match the class, the scene conditions,
+            and the annotation format your training pipeline expects.
           </p>
         </div>
 
         <div className="reasons">
           <Reason
-            marker="01 · novel classes"
-            title="We benchmark on classes your pretrained model doesn't already know."
-            body="Cats and cars are rigged experiments — COCO pretraining is doing the work, not the synth data. We test on classes outside COCO so the lift is real, not a ceiling you'd hit anyway."
+            marker="01 · asset fidelity"
+            title="We build around your object, not a generic demo class."
+            body="Every dataset starts from your 3D asset. That keeps the geometry, materials, and annotation target tied to the class you actually need to train on."
             callout={
               <>
-                our test class: <b>hard hats (novel)</b>
+                inputs supported: <b>.glb · .gltf · .fbx · .obj · .blend</b>
               </>
             }
           />
           <Reason
-            marker="02 · annotation fidelity"
+            marker="02 · scene coverage"
+            title="We render for the conditions your model will face."
+            body="Lighting, environment, viewpoint, and occlusion are designed around the deployment scenario. The goal is coverage that reflects the job, not a volume of interchangeable renders."
+            callout={
+              <>
+                coverage designed for: <b>lighting · environment · occlusion · viewpoint</b>
+              </>
+            }
+          />
+          <Reason
+            marker="03 · annotation fidelity"
             title="Annotations that match what your trainers expect."
-            body="Silent mismatches between how a dataset is annotated and how your trainer interprets it can quietly cost 20 to 40 mAP@50 points. We handle that for you — so you're not debugging a data bug disguised as a model problem."
+            body="The dataset ships with labels in COCO or YOLO format, plus a datasheet documenting dataset composition, scene coverage, and deliverables. That makes the handoff usable, not just visually convincing."
             callout={
               <>
-                typical hidden mismatch cost: <b>20–40 pts mAP@50</b>
-              </>
-            }
-          />
-          <Reason
-            marker="03 · honest reporting"
-            title="We tell you where the model still fails."
-            body="Every dataset ships with a slice breakdown — small objects vs large, cluttered scenes vs clean, dark images vs bright. You see where your detector is solved and where it isn't. No summary-statistic illusions."
-            callout={
-              <>
-                included in every delivery: <b>per-slice recall report</b>
+                included in every delivery: <b>COCO/YOLO labels + comprehensive datasheet</b>
               </>
             }
           />

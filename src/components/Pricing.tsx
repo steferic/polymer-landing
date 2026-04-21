@@ -52,10 +52,10 @@ export function Pricing() {
             name="Enterprise"
             price="Let's talk"
             priceTalk
-            sub="Multi-class dataset programs with custom asset creation and deployment needs."
+            sub="Multi-class dataset programs with custom coverage, asset prep, and deployment needs."
             items={[
               "Multi-class dataset program",
-              "Custom asset creation from photos, video, scan, or CAD",
+              "Asset prep for complex 3D pipelines",
               "Custom coverage design and annotation schema",
               "On-prem / VPC rendering available",
               "SLA + dedicated ML engineer",

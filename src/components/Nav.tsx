@@ -22,7 +22,7 @@ export function Nav({ theme, onToggleTheme }: { theme: Theme; onToggleTheme: () 
           </span>
         </div>
         <div className="nav-links">
-          <a href="#benchmark">Benchmark</a>
+          <a href="#benchmark">Proof</a>
           <a href="#how">How it works</a>
           <a href="#why">Why us</a>
           <a href="#pricing">Pricing</a>
@@ -62,7 +62,7 @@ export function Nav({ theme, onToggleTheme }: { theme: Theme; onToggleTheme: () 
             )}
           </button>
           <a className="btn btn-ghost" href="#request">
-            Request benchmark
+            Request sample
           </a>
         </div>
       </div>

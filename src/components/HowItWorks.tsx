@@ -5,14 +5,14 @@ export function HowItWorks() {
         <div className="section-head">
           <span className="eyebrow">How it works · 48h pipeline</span>
           <h2>
-            From source material to a <em>labeled dataset</em>.
+            From your 3D asset to a <em>labeled dataset</em>.
           </h2>
         </div>
 
         <div className="steps">
           <Step
             num="01"
-            label="SHARE"
+            label="UPLOAD"
             icon={
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                 <path
@@ -25,16 +25,16 @@ export function HowItWorks() {
                 <rect x="4" y="14" width="16" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5" />
               </svg>
             }
-            title="Share photos, video, or a 3D model."
-            body="Start with reference photos, a short video, or an existing 3D model. If needed, we build the asset first using standard 3D modeling or Gaussian splatting."
+            title="Drop in your 3D asset."
+            body="One file. We handle rigging, materials, and scale normalization."
             detailLeft={
               <>
-                inputs: <span style={{ color: "var(--ink-2)" }}>photos · video · 3D model</span>
+                accepted: <span style={{ color: "var(--ink-2)" }}>.glb · .gltf · .fbx · .obj · .blend</span>
               </>
             }
             detailRight={
               <>
-                asset creation: <span style={{ color: "var(--good)" }}>included if needed</span>
+                rigged armature: <span style={{ color: "var(--good)" }}>supported</span>
               </>
             }
           />
