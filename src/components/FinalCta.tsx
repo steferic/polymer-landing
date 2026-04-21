@@ -11,11 +11,11 @@ export function FinalCta() {
           <br />
           a hard-to-capture <em>object class?</em>
           <br />
-          Let&apos;s build it.
+          Start with the pilot.
         </h2>
-        <p>Start with a small sample dataset and see the output quality for yourself.</p>
+        <p>Scope one class, share your 3D asset, and get a production-quality pilot dataset in 48 hours.</p>
         <a className="btn btn-primary" href="#request">
-          Request a sample dataset
+          Start the 48h pilot
           <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
             <path
               d="M3 8 H13 M9 4 L13 8 L9 12"

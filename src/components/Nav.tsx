@@ -31,7 +31,7 @@ export function Nav({ theme, onToggleTheme }: { theme: Theme; onToggleTheme: () 
         </div>
         <div className="nav-right">
           <span className="mono">
-            <span className="dot" />4 pilot slots / Apr
+            <span className="dot" />4 pilot slots / month
           </span>
           <button
             type="button"
@@ -62,7 +62,7 @@ export function Nav({ theme, onToggleTheme }: { theme: Theme; onToggleTheme: () 
             )}
           </button>
           <a className="btn btn-ghost" href="#request">
-            Request sample
+            Start pilot
           </a>
         </div>
       </div>

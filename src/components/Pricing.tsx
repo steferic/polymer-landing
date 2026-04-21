@@ -8,8 +8,8 @@ export function Pricing() {
             Priced like <em>a dataset,</em> not a demo.
           </h2>
           <p className="deck">
-            Every tier includes a comprehensive datasheet covering dataset composition, scene
-            coverage, annotations, and deliverables.
+            Most teams start with the 48-hour Pilot. It is the fastest way to validate one class,
+            then expand into a larger scale job once the lift is proven.
           </p>
         </div>
 
@@ -18,7 +18,7 @@ export function Pricing() {
             name="Pilot"
             price="$2,400"
             unit="/ one class"
-            sub="Start with a focused, production-quality dataset for one class."
+            sub="The first engagement: a focused, production-quality dataset for one class."
             items={[
               "2,000 labeled renders, one class",
               "Coverage across lighting · environment · occlusion · viewpoint",
@@ -27,7 +27,7 @@ export function Pricing() {
               "48 hour delivery",
             ]}
             ctaHref="#request"
-            ctaLabel="Start a pilot"
+            ctaLabel="Start the pilot"
             ctaPrimary={false}
           />
           <Tier
@@ -36,7 +36,7 @@ export function Pricing() {
             featured
             price="$9,800"
             unit="/ one class"
-            sub="For teams moving beyond pilot and building broader training coverage."
+            sub="For teams that have validated the pilot and want broader training coverage."
             items={[
               "Everything in Pilot",
               "10,000 labeled renders, one class",
@@ -45,7 +45,7 @@ export function Pricing() {
               "7 day delivery",
             ]}
             ctaHref="#request"
-            ctaLabel="Run a scale job"
+            ctaLabel="Scope a scale job"
             ctaPrimary={true}
           />
           <Tier

@@ -39,9 +39,19 @@ export function FaqAndForm() {
               q="What do you deliver?"
               a={
                 <>
-                  A high-quality synthetic dataset with rendered images, labels in COCO or YOLO
-                  format, object pose annotations, and a comprehensive datasheet describing dataset
-                  composition and scene coverage.
+                  The pilot delivers a production-quality synthetic dataset with rendered images,
+                  labels in COCO or YOLO format, object pose annotations, and a comprehensive
+                  datasheet describing dataset composition and scene coverage.
+                </>
+              }
+            />
+            <Q
+              q="Can we start with a smaller sample first?"
+              a={
+                <>
+                  Yes. If you want a lower-commitment asset and quality check first, we can scope a
+                  small qualification sample. The main offer, though, is the 48-hour pilot dataset,
+                  because that is the first package big enough to test in a real training loop.
                 </>
               }
             />
@@ -77,13 +87,14 @@ export function FaqAndForm() {
         </div>
 
         <div id="request" style={{ position: "sticky", top: 80 }}>
-          <span className="eyebrow">Request a sample dataset</span>
+          <span className="eyebrow">Start the 48h pilot</span>
           <h2 style={{ marginBottom: 16 }}>
-            See a sample in <em>48 hours.</em>
+            Start with one class in <em>48 hours.</em>
           </h2>
           <p style={{ color: "var(--ink-2)", marginBottom: 28 }}>
-            Tell us your class and share your 3D asset. We&apos;ll generate a small sample dataset
-            of about 10 labeled renders so you can see the output quality.
+            Share your class, deployment environment, and 3D asset. We&apos;ll scope the pilot
+            dataset and reply within 12 hours. If you only want a smaller qualification sample
+            first, note that below.
           </p>
 
           <RequestForm />
@@ -119,7 +130,7 @@ function RequestForm() {
         <input type="text" placeholder="e.g. road cones, shelf SKUs, missing PPE" required />
       </div>
       <div>
-        <label># real labels you have</label>
+        <label>Approx. real labels you have</label>
         <select defaultValue="25 – 100">
           <option>0 (cold start)</option>
           <option>1 – 25</option>
@@ -140,7 +151,7 @@ function RequestForm() {
         <label>Notes (optional)</label>
         <textarea
           rows={3}
-          placeholder="Link your 3D asset and describe the scene conditions and edge cases you care about."
+          placeholder="Link your 3D asset, describe the scene conditions you care about, and mention if you want a smaller qualification sample before the full pilot."
         />
       </div>
       <div className="form-actions full">
@@ -148,7 +159,7 @@ function RequestForm() {
           ✓ Received · we'll reply within 12h
         </span>
         <button type="submit" className="btn btn-primary">
-          {submitted ? "Queued — we'll email you" : "Request the sample dataset"}
+          {submitted ? "Queued — we'll email you" : "Start the pilot"}
           {!submitted && (
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
               <path

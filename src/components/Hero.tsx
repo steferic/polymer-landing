@@ -13,11 +13,19 @@ export function Hero() {
           Not anymore.
         </h1>
         <p className="sub">
-          Photorealistic synthetic training data built from your 3D asset.
+          Photorealistic synthetic training data built from your 3D asset, starting with a 48-hour
+          pilot dataset.
         </p>
 
         <div className="hero-ctas">
-          <a className="btn btn-primary" href="#benchmark">
+          <a className="btn btn-primary" href="#request">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <rect x="2.5" y="3.5" width="11" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.4" />
+              <path d="M3 5 L8 8.5 L13 5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+            </svg>
+            Start a 48h pilot <span className="kbd dark">S</span>
+          </a>
+          <a className="btn btn-ghost" href="#benchmark">
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <path
                 d="M2 14 L6 10 L9 12 L14 5"
@@ -36,16 +44,9 @@ export function Hero() {
             </svg>
             See the proof <span className="kbd">P</span>
           </a>
-          <a className="btn btn-ghost" href="#request">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-              <rect x="2.5" y="3.5" width="11" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.4" />
-              <path d="M3 5 L8 8.5 L13 5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-            </svg>
-            Request a sample dataset <span className="kbd dark">R</span>
-          </a>
         </div>
 
-        <div className="hero-meta">Free sample dataset · 48h turnaround</div>
+        <div className="hero-meta">Pilot dataset from $2,400 · 48h turnaround</div>
       </div>
 
       <div className="wrap" style={{ marginTop: "64px", position: "relative" }}>

@@ -28,7 +28,7 @@ export default function App() {
       }
 
       const key = event.key.toLowerCase();
-      const sectionId = key === "p" ? "benchmark" : key === "r" ? "request" : null;
+      const sectionId = key === "p" ? "benchmark" : key === "s" ? "request" : null;
       if (!sectionId) {
         return;
       }
