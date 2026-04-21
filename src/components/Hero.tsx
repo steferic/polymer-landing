@@ -34,7 +34,7 @@ export function Hero() {
                 strokeLinejoin="round"
               />
             </svg>
-            See the proof <span className="kbd">B</span>
+            See the proof <span className="kbd">P</span>
           </a>
           <a className="btn btn-ghost" href="#request">
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
